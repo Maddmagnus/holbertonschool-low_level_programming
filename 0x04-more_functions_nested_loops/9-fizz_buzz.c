@@ -30,9 +30,9 @@ int main(void)
 		}
 		if (i != 100)
 		{
-			_putchar(' ');
+			printf(' ');
 		}
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 }
