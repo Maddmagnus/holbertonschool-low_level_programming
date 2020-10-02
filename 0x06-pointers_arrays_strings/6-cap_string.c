@@ -2,14 +2,14 @@
 
 /**
  * cap_string - capitilize words
- * @str: string
+ * @s: string
  * Return: capital words
  */
 
 char *cap_string(char *s)
 {
 	int j = 0;
-        int i = 0;
+	int i = 0;
 	char cap[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(',
 		      ')', '{', '}'};
 
