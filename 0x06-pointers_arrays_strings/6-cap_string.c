@@ -13,6 +13,8 @@ char *cap_string(char *str)
 	char cap[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(',
 		      ')', '{', '}'};
 
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] = str[0] - ' ';
 	while (str[i])
 	{
 		while (j < 13)
