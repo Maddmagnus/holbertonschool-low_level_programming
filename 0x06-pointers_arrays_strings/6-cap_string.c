@@ -23,15 +23,11 @@ char *cap_string(char *s)
 		{
 			if (s[j] == cap[i])
 			{
-				if (s[j + 1] >= 'a' && s[j + 1] <= 'z')
+				if (s[j + 1] >= 'a' && <= 'z')
 				{
-					s[j + 1]  = s[j + 1] - ' ';
+					s[j + 1]  -= 32;
 				}
 			}
-				else
-				{
-					s[j] = s[j];
-				}
 			i++;
 		}
 		j++;
