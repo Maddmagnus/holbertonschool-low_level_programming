@@ -1,4 +1,4 @@
-#include "bootcamp.h"
+#include "holberton.h"
 /**
  * string_toupper - converts lower to upper
  * @s: string
