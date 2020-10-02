@@ -2,35 +2,29 @@
 
 /**
  * cap_string - capitilize words
- * @s: string
+ * @str: string
  * Return: capital words
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int j = 0;
 	int i = 0;
+	int j = 0;
 	char cap[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(',
 		      ')', '{', '}'};
 
-	if (s[0] >= 'a' && s[0] <= 'z')
+	while (str[i])
 	{
-		s[0] = s[0] - ' ';
-	}
-	while (s[i] != '\0')
-	{
-		while (i < 13)
+		while (j < 13)
 		{
-			if (s[j] == cap[i])
+			if (str[i] == cap[j])
 			{
-				if (s[j + 1] >= 'a' && <= 'z')
-				{
-					s[j + 1]  -= 32;
-				}
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+					str[i + 1] -= 32;
 			}
-			i++;
+				j++;
 		}
-		j++;
+			i++;
 	}
-	return (s);
+	return (str);
 }
