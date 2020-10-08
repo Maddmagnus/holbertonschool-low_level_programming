@@ -1,10 +1,12 @@
 #include "holberton.h"
+
 /**
  * _print_rev_recursion - reverses string
  * @s: string
  * Return: string
  */
-void _print_rev_recursion(char *s);
+
+void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 	{
