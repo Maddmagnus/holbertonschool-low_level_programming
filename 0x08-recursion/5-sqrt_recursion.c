@@ -20,9 +20,9 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_assist(int x, int y)
 {
-if (y * y > x)
+	if (y * y > x)
 	return (-1);
-if (y * y == x)
+	if (y * y == x)
 	return (y);
-return (_sqrt_assist(x, y + 1));
+	return (_sqrt_assist(x, y + 1));
 }
