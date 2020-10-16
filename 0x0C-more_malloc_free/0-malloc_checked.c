@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * malloc_checked - frees memory
  * @b: object
